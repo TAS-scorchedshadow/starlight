@@ -1,0 +1,42 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 12rem;
+  letter-spacing: 3px;
+  line-height: 1.1;
+}
+
+.subcontainer {
+  display: flex;
+  height: 5rem;
+  gap: 5px
+}
+
+.subcontainer .card {
+  flex: 1;
+}
+
+.card {
+  border-radius: 8px;
+  background-color: #636363;
+}
+
+.year-text {
+  font-size: 5rem;
+}
+
+.submissions-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+@media (max-width: 768px) {
+  .submissions-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,45 @@
+.imgContainer {
+  width: 100%;
+}
+
+.imgContainer img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #636363;
+  border-radius: 1rem;
+}
+
+.projectCardBody {
+  padding: 1rem 2rem 2rem 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCardTitle {
+  margin: 0;
+  font-size: clamp(1rem, 5vw, 1.5rem);
+}
+
+.projectCardSubtitle {
+  font-size: 1em;
+  margin: 0;
+}
+
+.projectCardButtonWrapper {
+  margin-top: auto;
+}
+
+.projectCardButton {
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem 0;
+}
