@@ -48,6 +48,7 @@ export default function Submissions({ year }: { year: number }) {
           <ProjectCard project={p} />
         ))}
       </section>
+      [
     </>
   );
 }
