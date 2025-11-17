@@ -323,6 +323,45 @@ export const starlightProjectData: {
   ],
 };
 
+export type Category = {
+  name: string;
+  projects: string[];
+};
+
+export const starlightProjectWinners: {
+  [year: number]: Category[];
+} = {
+  2025: [
+    {
+      name: "Best Projects",
+      projects: ["LinSoc - Trip", "Helios"],
+    },
+    {
+      name: "People's Choice",
+      projects: ["D&C: Divide and Conquer"],
+    },
+    {
+      name: "First Steps",
+      projects: ["Room 134", "Helios", "RAMSOC - Pick-a-bots"],
+    },
+    {
+      name: "Unilife",
+      projects: [
+        "UNSW Redback Racing - Autonomous Vehicles",
+        "Bluesat - High Altitude Balloon",
+      ],
+    },
+    {
+      name: "Hobby",
+      projects: ["Pokémon Showdown Team Stealer"],
+    },
+    {
+      name: "Most Impactful Project",
+      projects: ["Helios"],
+    },
+  ],
+};
+
 // export interface StarlightSupporterData {
 //   supporterLogos: SponsorInfo[];
 //   industryLogos?: SponsorInfo[];

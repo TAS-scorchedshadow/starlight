@@ -1,5 +1,6 @@
 .winnerSection {
   display: flex;
+  gap: 4rem
 }
 
 .imgContainer {
