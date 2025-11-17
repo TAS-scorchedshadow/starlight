@@ -5,10 +5,11 @@ import {
 } from "../data/starlight";
 import ProjectSpreadLeft from "./ProjectSpreadLeft";
 import ProjectSpreadRight from "./ProjectSpreadRight";
+import styles from "./CategorySection.module.css";
 
 export default function CategorySection({ category }: { category: Category }) {
   return (
-    <div>
+    <div className={styles.categorySection}>
       <h2>{category.name}</h2>
       <CategoryMainDisplay category={category} />
     </div>
@@ -17,7 +18,6 @@ export default function CategorySection({ category }: { category: Category }) {
 
 function CategoryMainDisplay({ category }: { category: Category }) {
   return category.projects.map((p, i) => {
-    console.log(p, i);
     if (i % 2 === 0) {
       return <ProjectSpreadRight project={lookupProject(p)} />;
     } else {
