@@ -325,6 +325,7 @@ export const starlightProjectData: {
 
 export type Category = {
   name: string;
+  description?: string;
   projects: string[];
 };
 
@@ -338,14 +339,17 @@ export const starlightProjectWinners: {
     },
     {
       name: "People's Choice",
+      description: "People's favourite voted on the day",
       projects: ["D&C: Divide and Conquer"],
     },
     {
       name: "First Steps",
+      description: "Projects where creators are trying something new!",
       projects: ["Room 134", "Helios", "RAMSOC - Pick-a-bots"],
     },
     {
       name: "Unilife",
+      description: "Projects with a university affiliation",
       projects: [
         "UNSW Redback Racing - Autonomous Vehicles",
         "Bluesat - High Altitude Balloon",
@@ -353,10 +357,11 @@ export const starlightProjectWinners: {
     },
     {
       name: "Hobby",
+      description: "Best hobby project",
       projects: ["Pokémon Showdown Team Stealer"],
     },
     {
-      name: "Most Impactful Project",
+      name: "TradeDesk - Most Impactful Project",
       projects: ["Helios"],
     },
   ],

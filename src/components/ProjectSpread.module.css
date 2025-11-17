@@ -1,11 +1,13 @@
 .winnerSection {
-  display: flex;
-  gap: 4rem
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  width: 100%;
 }
 
 .imgContainer {
-  width: 50%;
-  flex: 1
+  flex: 1;
+  display: flex;
 }
 
 .imgContainer img {
@@ -15,9 +17,8 @@
 }
 
 .winnerText {
-  display: block;
-  flex: 1;
-  /* text-align: end */
+  display: flex;
+  flex-direction: column;
 }
 
 .textEnd {
@@ -30,11 +31,25 @@
 
 .winnerText h1 {
   font-size: 5rem;
+  line-height: 1;
   margin: 0;
 }
 
 .winnerText h2 {
+  padding: 4px 4px;
   font-size: 2rem;
+  margin: 0;
+}
+
+.descriptionText {
+  flex: 1
+}
+
+.topText {
+  color: blanchedalmond;
+  font-size: 1.5rem;
+  padding-left: 4px;
+  padding-right: 4px;
   margin: 0;
 }
 

@@ -39,7 +39,7 @@ export default function Submissions({ year }: { year: number }) {
 
   return (
     <>
-      <h2 className="year-text">Submissions</h2>
+      <h2 className="year-text">All Submissions</h2>
       <button onClick={handleShuffle}>Shuffle</button>
       <ProjectSpreadRight project={projects[highlightIdx]} />
       <br></br>

@@ -10,8 +10,13 @@ import styles from "./CategorySection.module.css";
 export default function CategorySection({ category }: { category: Category }) {
   return (
     <div className={styles.categorySection}>
-      <h2>{category.name}</h2>
-      <CategoryMainDisplay category={category} />
+      <h2 className={styles.categoryHeader}>{category.name}</h2>
+      {category.description && (
+        <p className={styles.categorySubHeader}>{category.description}</p>
+      )}
+      <div className={styles.categoryMain}>
+        <CategoryMainDisplay category={category} />
+      </div>
     </div>
   );
 }
@@ -19,9 +24,19 @@ export default function CategorySection({ category }: { category: Category }) {
 function CategoryMainDisplay({ category }: { category: Category }) {
   return category.projects.map((p, i) => {
     if (i % 2 === 0) {
-      return <ProjectSpreadRight project={lookupProject(p)} />;
+      return (
+        <ProjectSpreadRight
+          project={lookupProject(p)}
+          top_text={place_map[i + 1]}
+        />
+      );
     } else {
-      return <ProjectSpreadLeft project={lookupProject(p)} />;
+      return (
+        <ProjectSpreadLeft
+          project={lookupProject(p)}
+          top_text={place_map[i + 1]}
+        />
+      );
     }
   });
 }
@@ -35,3 +50,9 @@ function lookupProject(project_name: string): CardType {
     }
   );
 }
+
+const place_map: { [key: number]: string } = {
+  1: "First Place",
+  2: "Second Place",
+  3: "Third Place",
+};
