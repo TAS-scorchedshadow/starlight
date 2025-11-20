@@ -52,7 +52,7 @@ function lookupProject(project_name: string): CardType {
 }
 
 const place_map: { [key: number]: string } = {
-  1: "First Place",
-  2: "Second Place",
-  3: "Third Place",
+  1: "1st Place",
+  2: "2nd Place",
+  3: "3rd Place",
 };

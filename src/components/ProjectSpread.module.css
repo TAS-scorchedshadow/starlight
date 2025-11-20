@@ -46,6 +46,7 @@
 }
 
 .topText {
+  font-weight: bold;
   color: blanchedalmond;
   font-size: 1.5rem;
   padding-left: 4px;
