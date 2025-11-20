@@ -12,9 +12,9 @@ const shuffleArray = (array: CardType[]) => {
   return newArray;
 };
 
-const random = (n: number) => {
-  return Math.floor(Math.random() * n);
-};
+// const random = (n: number) => {
+//   return Math.floor(Math.random() * n);
+// };
 
 export default function Submissions({ year }: { year: number }) {
   const [projects, setProjects] = useState(

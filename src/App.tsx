@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+// import { useGSAP } from "@gsap/react";
 import "./App.css";
 // import ProjectSpreadRight from "./components/ProjectSpreadRight";
 import Submissions from "./components/Submissions";
